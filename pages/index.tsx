@@ -7,8 +7,8 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   const [content, setContent] = useState("");
   return (
-    <div className={styles.container}>
-     <MapChart setTooltipContent={setContent} />
+    <div className={styles.main}>
+     <MapChart  setTooltipContent={setContent} />
       <ReactTooltip>{content}</ReactTooltip>
     </div>
   )

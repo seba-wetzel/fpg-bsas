@@ -5,7 +5,7 @@ import {
   Geographies,
   Geography
 } from "react-simple-maps";
-
+import styles from '../styles/Home.module.css'
 const geoUrl =
   "/topo.toposjon";
 
@@ -21,8 +21,11 @@ const rounded = num => {
 
 const MapChart = ({ setTooltipContent }) => {
   return (
-    <>
-      <ComposableMap data-tip="" projectionConfig=""      projectionConfig={{
+    <div >
+      <ComposableMap
+      className={styles.main}
+      data-tip=""
+      projectionConfig={{
         rotate: [60, 38, -1],
         scale: 3000
       }}>
@@ -60,7 +63,7 @@ const MapChart = ({ setTooltipContent }) => {
           </Geographies>
         </ZoomableGroup>
       </ComposableMap>
-    </>
+    </div>
   );
 };
 
