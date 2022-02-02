@@ -43,18 +43,21 @@ const MapChart = ({ setTooltipContent }) => {
                   onMouseLeave={() => {
                     setTooltipContent("");
                   }}
+                  stroke="#EAEAEC"
+                  strokeWidth="0.2"
                   style={{
                     default: {
                       fill: "#D6D6DA",
-                      outline: "none"
+                      outline: "#EAEAEC",
+                    //   
                     },
                     hover: {
                       fill: "#F53",
                       outline: "none"
                     },
                     pressed: {
-                      fill: "#E42",
-                      outline: "none"
+                      fill: "#fffff",
+                      outline: "stroke"
                     }
                   }}
                 />
