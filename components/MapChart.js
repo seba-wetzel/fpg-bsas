@@ -7,21 +7,13 @@ import {
 } from "react-simple-maps";
 import styles from '../styles/Home.module.css'
 const geoUrl =
-  "/topo.toposjon";
+  "/departamentos-buenos_aires.topojson";
 
-const rounded = num => {
-  if (num > 1000000000) {
-    return Math.round(num / 100000000) / 10 + "Bn";
-  } else if (num > 1000000) {
-    return Math.round(num / 100000) / 10 + "M";
-  } else {
-    return Math.round(num / 100) / 10 + "K";
-  }
-};
+
 
 const MapChart = ({ setTooltipContent }) => {
   return (
-    <div >
+    <div style={{minHeight:'100vh'}}>
       <ComposableMap
       className={styles.main}
       data-tip=""
@@ -30,24 +22,24 @@ const MapChart = ({ setTooltipContent }) => {
         scale: 3000
       }}>
         <ZoomableGroup>
-          <Geographies geography={geoUrl}>
+          <Geographies style={{minHeight:'100vh'}} geography={geoUrl}>
             {({ geographies }) =>
               geographies.map(geo => (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
                   onMouseEnter={() => {
-                    const { NAME, POP_EST } = geo.properties;
-                    setTooltipContent(`${NAME} — ${rounded(POP_EST)}`);
+                    const { departamento, cabecera } = geo.properties;
+                    setTooltipContent(`${departamento} — ${cabecera}`);
                   }}
                   onMouseLeave={() => {
                     setTooltipContent("");
                   }}
-                  stroke="#EAEAEC"
+                  stroke="#FFFFFF"
                   strokeWidth="0.2"
                   style={{
                     default: {
-                      fill: "#D6D6DA",
+                      fill: geo.properties.departamento[0] == "M"? "#ff0000" : "#D6D6DA",
                       outline: "#EAEAEC",
                     //   
                     },
