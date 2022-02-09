@@ -13,11 +13,11 @@ const center = {
   lng:-58.790
 };
 
-const onClick = (...args) => {
+const onClick = (...args: { latLng: {lat:()=> any, lng: () => any; }; }[]) => {
   console.log('onClick args: ', args[0].latLng.lat(), ' : ', args[0].latLng.lng())
 }
 
-const onDataLoad = data => {
+const onDataLoad = (data:unknown) => {
   console.log('data: ', data)
 }
 
@@ -26,9 +26,7 @@ const dataOptions = {
   controlPosition: 2,
   
   drawingMode: 'Point', //  "LineString" or "Polygon".
-  featureFactory: geometry => {
-    console.log('geometry: ', geometry)
-  },
+
   // Type:  boolean
   // If true, the marker receives mouse and touch events. Default value is true.
   clickable: true,
