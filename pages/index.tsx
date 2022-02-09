@@ -95,7 +95,15 @@ const Home: NextPage = () => {
   const onLoad = useCallback(
     (mapInstance)=> {
       // do something with map Instance
-      mapInstance.data.loadGeoJson('/departamentos-buenos_aires.geojson')
+      mapInstance.data.loadGeoJson('/departamentos-buenos_aires.geojson');
+      mapInstance.data.setStyle({
+        fillColor: 'green',
+        strokeWeight: 3
+      })
+      mapInstance.data.addListener('click', function(event) {
+        console.log(event.feature)
+        mapInstance.data.overrideStyle(event.feature, {fillColor: 'red'});
+     });
       console.log(mapInstance)
     },[]
   )
