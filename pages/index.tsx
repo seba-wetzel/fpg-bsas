@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import type { NextPage } from 'next'
 import { GoogleMap, useJsApiLoader, Data } from '@react-google-maps/api';
-
+import * from '@type'
 
 const containerStyle = {
   width: '100vw',
@@ -13,8 +13,8 @@ const center = {
   lng:-58.790
 };
 
-const onClick = (...args: { latLng: {lat:()=> any, lng: () => any; }; }[]) => {
-  console.log('onClick args: ', args[0].latLng.lat(), ' : ', args[0].latLng.lng())
+const onClick = (...args: google.maps.MapMouseEvent[] |) => {
+  if(args[0]) console.log('onClick args: ', args[0].latLng.lat(), ' : ', args[0].latLng.lng())
 }
 
 const onDataLoad = (data:unknown) => {
