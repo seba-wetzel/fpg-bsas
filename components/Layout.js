@@ -52,9 +52,9 @@ const Search = styled('div')(({ theme }) => ({
 
 export default function Layout({ children }) {
     return (
-      <>
+      <div style={{height:'100vh'}}>
  <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar >
         <Toolbar>
           <IconButton
             size="large"
@@ -84,8 +84,9 @@ export default function Layout({ children }) {
           </Search>
         </Toolbar>
       </AppBar>
-      <main>{children}</main>
-    </Box>        
-      </>
+     
+    </Box>      
+    <main className='h-full'>{children}</main>  
+      </div>
     )
   }

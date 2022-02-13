@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { GoogleMap, useJsApiLoader, Data } from '@react-google-maps/api';
-
+import { colores } from '../utils/seccionesElectorales';
 
 const containerStyle = {
   width: '100%',
@@ -32,16 +32,23 @@ const Maps = () => {
   const onLoad = useCallback(
     (mapInstance)=> {
       // do something with map Instance
-      mapInstance.data.loadGeoJson('/departamentos-buenos_aires.geojson');
-      mapInstance.data.setStyle({
-        fillColor: 'green',
-        strokeWeight: 3
-      })
+      mapInstance.data.loadGeoJson('/mapa-con-secciones-electorales.geojson');
+      // mapInstance.data.setStyle({
+      //   fillColor: 'green',
+      //   strokeWeight: 3
+      // })
+      mapInstance.data.setStyle(feature=>{
+console.log(feature.h)
+return      {  fillColor: colores[feature.h.seccion_electoral],
+  strokeWeight: 2
+ }
+
+      });
       mapInstance.data.addListener('click', function(event) {
         console.log(event.feature)
         mapInstance.data.overrideStyle(event.feature, {fillColor: 'red'});
      });
-      console.log(mapInstance)
+      console.log("ONLOAD: ", mapInstance.data)
     },[]
   )
 
