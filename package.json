@@ -20,11 +20,13 @@
     "@mui/material": "^5.4.1",
     "@react-google-maps/api": "^2.7.0",
     "autoprefixer": "^10.4.2",
+    "font-color-contrast": "^11.1.0",
     "google-map-react": "^2.1.10",
     "next": "12.0.10",
     "postcss": "^8.4.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "standard": "^16.0.4",
     "tailwindcss": "^3.0.21"
   },
   "devDependencies": {
@@ -34,5 +36,4 @@
     "eslint-config-next": "12.0.10",
     "typescript": "4.5.5"
   }
- 
 }
