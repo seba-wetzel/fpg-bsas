@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { distritos } from '../../utils/seccionesElectorales'
 
 const Seccion = () => {
   const router = useRouter()

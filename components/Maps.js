@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { useRouter } from 'next/router'
 import { GoogleMap, useJsApiLoader, Data } from '@react-google-maps/api'
-import { colores } from '../utils/seccionesElectorales'
+import { colores } from '../utils/seccionesElectorales.js'
 
 const containerStyle = {
   width: '100%',
@@ -40,8 +40,9 @@ const Maps = () => {
         strokeWeight: 2
       }))
       mapInstance.data.addListener('click', function (event) {
-        console.log(event.feature.getProperty('seccion_electoral'))
-        router.push(`/seccion/${event.feature.getProperty('seccion_electoral')}`)
+        console.log(event.feature.getProperty('seccion_electoral'), event.feature)
+        const seccion_electoral = event.feature.getProperty('seccion_electoral');
+        if (seccion_electoral) router.push(`/seccion/${seccion_electoral}`)
         // mapInstance.data.overrideStyle(event.feature, { fillColor: 'red' })
       })
       console.log('ONLOAD: ', mapInstance.data)

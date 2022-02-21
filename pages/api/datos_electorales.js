@@ -595,5 +595,643 @@ export const datos_electorales = {
         poblacion: 19877
       }
     ]
+  },
+  4: {
+    diputados: 14,
+    senadores: 7,
+    poblacion: 530421,
+    distritos: 
+      [
+        {
+          "distrito": "alberti",
+          "intendencia": "german lago",
+          "fuerza_gobierno": "fdt",
+          "concejalias": 6,
+          "consejalias_escolares": 2,
+          "poblacion": 10654
+        },
+        {
+          "distrito": "bragado",
+          "intendencia": "vicente gatica",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 9,
+          "consejalias_escolares": 3,
+          "poblacion": 41336
+        },
+        {
+          "distrito": "carlos casares",
+          "intendencia": "daniel stadnik",
+          "fuerza_gobierno": "fdt",
+          "concejalias": 7,
+          "consejalias_escolares": 3,
+          "poblacion": 22237
+        },
+        {
+          "distrito": "carlos tejedor",
+          "intendencia": "maria gianini",
+          "fuerza_gobierno": "fdt",
+          "concejalias": 7,
+          "consejalias_escolares": 3,
+          "poblacion": 11570
+        },
+        {
+          "distrito": "chacabuco",
+          "intendencia": "victor aiola",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 9,
+          "consejalias_escolares": 3,
+          "poblacion": 48703
+        },
+        {
+          "distrito": "chivilcoy",
+          "intendencia": "guillermo britos",
+          "fuerza_gobierno": "consenso federal",
+          "concejalias": 9,
+          "consejalias_escolares": 3,
+          "poblacion": 72350
+        },
+        {
+          "distrito": "florentino ameghino",
+          "intendencia": "calixto tellechea",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 5,
+          "consejalias_escolares": 2,
+          "poblacion": 8869
+        },
+        {
+          "distrito": "gral arenales",
+          "intendencia": "edgardo battaglia",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 6,
+          "consejalias_escolares": 2,
+          "poblacion": 14903
+        },
+        {
+          "distrito": "gral pinto",
+          "intendencia": "jose alfredo zavatarelli",
+          "fuerza_gobierno": "fdt",
+          "concejalias": 6,
+          "consejalias_escolares": 2,
+          "poblacion": 6557
+        },
+        {
+          "distrito": "gral viamonte",
+          "intendencia": "franco flexas",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 6,
+          "consejalias_escolares": 2,
+          "poblacion": 18074
+        },
+        {
+          "distrito": "gral villegas",
+          "intendencia": "eduardo campana",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 8,
+          "consejalias_escolares": 3,
+          "poblacion": 30864
+        },
+        {
+          "distrito": "hipólito yrigoyen",
+          "intendencia": "luis pugnaloni",
+          "fuerza_gobierno": "fdt",
+          "concejalias": 5,
+          "consejalias_escolares": 2,
+          "poblacion": 9585
+        },
+        {
+          "distrito": "junin",
+          "intendencia": "pablo petrecca",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 10,
+          "consejalias_escolares": 3,
+          "poblacion": 90305
+        },
+        {
+          "distrito": "leandro alem",
+          "intendencia": "carlos ferraris",
+          "fuerza_gobierno": "fdt",
+          "concejalias": 6,
+          "consejalias_escolares": 2,
+          "poblacion": 2468
+        },
+        {
+          "distrito": "lincoln",
+          "intendencia": "salvador serenal",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 9,
+          "consejalias_escolares": 3,
+          "poblacion": 41808
+        },
+        {
+          "distrito": "nueve de julio",
+          "intendencia": "mariano barroso",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 9,
+          "consejalias_escolares": 3,
+          "poblacion": 47773
+        },
+        {
+          "distrito": "pehuajo",
+          "intendencia": "pablo zurro",
+          "fuerza_gobierno": "fdt",
+          "concejalias": 8,
+          "consejalias_escolares": 3,
+          "poblacion": 31533
+        },
+        {
+          "distrito": "rivadavia",
+          "intendencia": "javier reynoso",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 6,
+          "consejalias_escolares": 2,
+          "poblacion": 17203
+        },
+        {
+          "distrito": "trenque lauquen",
+          "intendencia": "miguel fernandez",
+          "fuerza_gobierno": "jxc",
+          "concejalias": 9,
+          "consejalias_escolares": 3,
+          "poblacion": 43021
+        }
+      
+    ],
+  },
+  5:{
+    diputados: 11,
+    senadores: 5,
+    poblacion: 1272244,
+    distritos: [
+      {
+        "distrito": "ayacucho",
+        "intendencia": "emilio cordonnier",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 7,
+        "consejalias_escolares": 3,
+        "poblacion": 20337
+      },
+      {
+        "distrito": "balcarce",
+        "intendencia": "esteban reino",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 9,
+        "consejalias_escolares": 3,
+        "poblacion": 38376
+      },
+      {
+        "distrito": "castelli",
+        "intendencia": "sebastian echarren",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 5,
+        "consejalias_escolares": 2,
+        "poblacion": 8205
+      },
+      {
+        "distrito": "chascomus",
+        "intendencia": "javier gaston",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 8,
+        "consejalias_escolares": 3,
+        "poblacion": 42277
+      },
+      {
+        "distrito": "dolores",
+        "intendencia": "luis etchevarren",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 7,
+        "consejalias_escolares": 2,
+        "poblacion": 27042
+      },
+      {
+        "distrito": "gral belgrano",
+        "intendencia": "osvaldo dinapoli",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 17365
+      },
+      {
+        "distrito": "gral guido",
+        "intendencia": "carlos rocha",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 3,
+        "consejalias_escolares": 2,
+        "poblacion": 2816
+      },
+      {
+        "distrito": "gral lavalle",
+        "intendencia": "jose rodriguez ponte",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 3,
+        "consejalias_escolares": 2,
+        "poblacion": 3700
+      },
+      {
+        "distrito": "gral madariaga",
+        "intendencia": "carlos santoro",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 3,
+        "poblacion": 19747
+      },
+      {
+        "distrito": "gral paz",
+        "intendencia": "juan alvarez",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 11202
+      },
+      {
+        "distrito": "gral pueyrredon",
+        "intendencia": "guillermo montenegro",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 12,
+        "consejalias_escolares": 5,
+        "poblacion": 618989
+      },
+      {
+        "distrito": "la costa",
+        "intendencia": "cristian cardozo",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 9,
+        "consejalias_escolares": 3,
+        "poblacion": 69633
+      },
+      {
+        "distrito": "las flores",
+        "intendencia": "alberto gelene",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 7,
+        "consejalias_escolares": 3,
+        "poblacion": 23871
+      },
+      {
+        "distrito": "lezama",
+        "intendencia": "arnaldo harispe",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 3,
+        "consejalias_escolares": 2,
+        "poblacion": 5661
+      },
+      {
+        "distrito": "lobería",
+        "intendencia": "juan fioramonti",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 3,
+        "poblacion": 17523
+      },
+      {
+        "distrito": "maipú",
+        "intendencia": "matias rapallini",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 10188
+      },
+      {
+        "distrito": "mar chiquita",
+        "intendencia": "jorge paredi",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 7,
+        "consejalias_escolares": 3,
+        "poblacion": 21279
+      },
+      {
+        "distrito": "monte",
+        "intendencia": "josé castro",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 7,
+        "consejalias_escolares": 2,
+        "poblacion": 21034
+      },
+      {
+        "distrito": "necochea",
+        "intendencia": "arturo rojas",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 10,
+        "consejalias_escolares": 3,
+        "poblacion": 93672
+      },
+      {
+        "distrito": "pila",
+        "intendencia": "gustavo walker",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 3,
+        "consejalias_escolares": 2,
+        "poblacion": 3640
+      },
+      {
+        "distrito": "pinamar",
+        "intendencia": "martin yeza",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 7,
+        "consejalias_escolares": 3,
+        "poblacion": 25728
+      },
+      {
+        "distrito": "rauch",
+        "intendencia": "robero suescun",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 15176
+      },
+      {
+        "distrito": "san cayetano",
+        "intendencia": "miguel gargaglioni",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 5,
+        "consejalias_escolares": 2,
+        "poblacion": 8399
+      },
+      {
+        "distrito": "tandil",
+        "intendencia": "miguel angel lunghi",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 10,
+        "consejalias_escolares": 4,
+        "poblacion": 123871
+      },
+      {
+        "distrito": "tordillo",
+        "intendencia": "alfredo farias",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 3,
+        "consejalias_escolares": 2,
+        "poblacion": 1764
+      },
+      {
+        "distrito": "villa gesell",
+        "intendencia": "gustavo barrera",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 8,
+        "consejalias_escolares": 2,
+        "poblacion": 31730
+      }
+    ],
+  },
+  6:{
+    diputados: 11,
+    senadores: 6,
+    poblacion: 651971 ,
+    distritos: [
+      {
+        "distrito": "adolfo alsina",
+        "intendencia": "javier andres",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 3,
+        "poblacion": 17072
+      },
+      {
+        "distrito": "bahia blanca",
+        "intendencia": "haector gay",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 12,
+        "consejalias_escolares": 5,
+        "poblacion": 301572
+      },
+      {
+        "distrito": "benito juarez",
+        "intendencia": "julio cesar marini",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 7,
+        "consejalias_escolares": 2,
+        "poblacion": 20239
+      },
+      {
+        "distrito": "coronel dorrego",
+        "intendencia": "raul reyes",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 15825
+      },
+      {
+        "distrito": "coronel pringles",
+        "intendencia": "lisandro matzkin",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 7,
+        "consejalias_escolares": 3,
+        "poblacion": 22933
+      },
+      {
+        "distrito": "coronel rosales",
+        "intendencia": "mariano uset",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 9,
+        "consejalias_escolares": 3,
+        "poblacion": 62152
+      },
+      {
+        "distrito": "coronel suarez",
+        "intendencia": "ricardo moccero",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 8,
+        "consejalias_escolares": 3,
+        "poblacion": 38320
+      },
+      {
+        "distrito": "daireax",
+        "intendencia": "esteban acervo",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 16889
+      },
+      {
+        "distrito": "gral lamadrid",
+        "intendencia": "martin randazzo",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 10783
+      },
+      {
+        "distrito": "guamini",
+        "intendencia": "jose nobre ferreira",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 11257
+      },
+      {
+        "distrito": "laprida",
+        "intendencia": "pablo torres",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 10210
+      },
+      {
+        "distrito": "monte hermoso",
+        "intendencia": "marcos fernandez",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 5,
+        "consejalias_escolares": 2,
+        "poblacion": 6494
+      },
+      {
+        "distrito": "patagones",
+        "intendencia": "jose luis zara",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 8,
+        "consejalias_escolares": 3,
+        "poblacion": 30806
+      },
+      {
+        "distrito": "pellegrini",
+        "intendencia": "guillermo pacheco",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 5,
+        "consejalias_escolares": 2,
+        "poblacion": 5887
+      },
+      {
+        "distrito": "puan",
+        "intendencia": "facundo castelli",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 15603
+      },
+      {
+        "distrito": "saavedra",
+        "intendencia": "gustavo notararigo",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 7,
+        "consejalias_escolares": 2,
+        "poblacion": 20749
+      },
+      {
+        "distrito": "salliquelo",
+        "intendencia": "ariel sucurro",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 5,
+        "consejalias_escolares": 2,
+        "poblacion": 12044
+      },
+      {
+        "distrito": "torquinst",
+        "intendencia": "sergio bordoni",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 12676
+      },
+      {
+        "distrito": "tres arroyos",
+        "intendencia": "carlos sanchez",
+        "fuerza_gobierno": "movimiento vecinal tres arroyos",
+        "concejalias": 9,
+        "consejalias_escolares": 3,
+        "poblacion": 57110
+      },
+      {
+        "distrito": "tres lomas",
+        "intendencia": "roberto alvarez",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 5,
+        "consejalias_escolares": 2,
+        "poblacion": 8712
+      },
+      {
+        "distrito": "villarino",
+        "intendencia": "carlos bevilacqua",
+        "fuerza_gobierno": "accion por villarino",
+        "concejalias": 8,
+        "consejalias_escolares": 3,
+        "poblacion": 30745
+      }
+    ],
+  },
+  7:{
+    diputados: 6,
+    senadores: 3,
+    poblacion: 277250 ,
+    distritos:[
+      {
+        "distrito": "azul",
+        "intendencia": "federico bertellys -jxc",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 9,
+        "consejalias_escolares": 3,
+        "poblacion": 65280
+      },
+      {
+        "distrito": "bolivar",
+        "intendencia": "marcos pisano - fdt",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 8,
+        "consejalias_escolares": 3,
+        "poblacion": 34190
+      },
+      {
+        "distrito": "gral alvear",
+        "intendencia": "ramon capra - jxc",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 15013
+      },
+      {
+        "distrito": "olavarria",
+        "intendencia": "ezequiel galli - jxc",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 10,
+        "consejalias_escolares": 4,
+        "poblacion": 111708
+      },
+      {
+        "distrito": "roque perez",
+        "intendencia": "juan maria cravero - jxc",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 6,
+        "consejalias_escolares": 2,
+        "poblacion": 12513
+      },
+      {
+        "distrito": "saladillo",
+        "intendencia": "jose luis salomon - jxc",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 8,
+        "consejalias_escolares": 3,
+        "poblacion": 32103
+      },
+      {
+        "distrito": "tapalque",
+        "intendencia": "gustavo cocconi - fdt",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 5,
+        "consejalias_escolares": 2,
+        "poblacion": 9178
+      },
+      {
+        "distrito": "veinticinco de mayo",
+        "intendencia": "hernan ralinqueo - fdt",
+        "fuerza_gobierno": "fdt",
+        "concejalias": 8,
+        "consejalias_escolares": 3,
+        "poblacion": 35842
+      }
+    ]
+  },
+  8:{
+    diputados: 6,
+    senadores: 3,
+    poblacion: 606395 ,
+    distritos:
+    [
+      {
+        "distrito": "la plata",
+        "intendencia": "julio garro",
+        "fuerza_gobierno": "jxc",
+        "concejalias": 12,
+        "consejalias_escolares": 5,
+        "poblacion": 654324
+      }
+    ]
   }
 }
