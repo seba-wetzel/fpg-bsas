@@ -16,7 +16,7 @@ const bull = (
   </Box>
 );
 
-function capitalize(word) {
+function capitalize(word = " ") {
     return word
       .split(' ')
       .map((letter) =>{
@@ -30,32 +30,33 @@ function capitalize(word) {
   
 
 export default function DistritoCard({distrito}) {
+    console.log(distrito)
   return (
     <Card variant="outlined" sx={{ minWidth: 275 }} >
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        <Link href={`/seccion/${distrito.seccionElectoral}`}>
-            <a> Seccion electoral: {distrito.seccionElectoral}</a>
+        <Link href={`/seccion/${distrito?.seccionElectoral}`}>
+            <a> Seccion electoral: {distrito?.seccionElectoral}</a>
         </Link>
         </Typography>
         <Typography variant="h5" component="div">
-        <Link href={`/distrito/${distrito.data.distrito}`}>
-            <a> {capitalize(distrito.data.distrito)} {bull} {distrito.data.fuerza_gobierno.toUpperCase()}</a>
+        <Link href={`/distrito/${distrito?.data?.distrito}`}>
+            <a> {capitalize(distrito?.data?.distrito)} {bull} {distrito?.data?.fuerza_gobierno.toUpperCase()}</a>
             </Link>
           
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {distrito.data.intendencia}
+          {distrito?.data?.intendencia}
         </Typography>
         <Typography variant="body2">
-          Cantidad de Consejales: {distrito.data.concejalias}
+          Cantidad de Consejales: {distrito?.data?.concejalias}
         </Typography>
         <Typography variant="body2">
-          Cantidad de Consejeros Escolares: {distrito.data.consejalias_escolares}
+          Cantidad de Consejeros Escolares: {distrito?.data?.consejalias_escolares}
          
         </Typography>
         <Typography variant="body2">
-          Poblacion: {new Intl.NumberFormat().format(distrito.data.poblacion)}
+          Poblacion: {new Intl.NumberFormat().format(distrito?.data?.poblacion)}
         </Typography>
       </CardContent>
 
