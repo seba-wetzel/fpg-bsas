@@ -7,6 +7,7 @@ import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
 import { styled, alpha } from '@mui/material/styles'
+import Link from 'next/link'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -71,7 +72,10 @@ export default function Layout ({ children }) {
               component='div'
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              TEG
+              <Link href={'/'}>
+              <a>Relevamiento</a>
+              </Link>
+              
             </Typography>
             <Search>
               <SearchIconWrapper>
