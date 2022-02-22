@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -8,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
 import { styled, alpha } from '@mui/material/styles'
 import Link from 'next/link'
+import {SearchContext} from "context/Search"
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -52,6 +54,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }))
 
 export default function Layout ({ children }) {
+  const context = useContext(SearchContext);
   return (
     <div style={{ height: '100vh' }}>
       <Box sx={{ flexGrow: 1 }}>
@@ -84,6 +87,7 @@ export default function Layout ({ children }) {
               <StyledInputBase
                 placeholder='Busqueda'
                 inputProps={{ 'aria-label': 'search' }}
+                onChange={e=>context.setSearch(e.target.value)}
               />
             </Search>
           </Toolbar>

@@ -22,10 +22,7 @@ function capitalize(word = " ") {
       .map((letter) =>{
       const firstLetter = letter.charAt(0).toUpperCase()
       return firstLetter.concat(letter.slice(1))
-    }
-        
-      )
-      .join(' ');
+    }).join(' ');
   }
   
 
@@ -46,7 +43,7 @@ export default function DistritoCard({distrito}) {
           
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {distrito?.data?.intendencia}
+          {capitalize(distrito?.data?.intendencia)}
         </Typography>
         <Typography variant="body2">
           Cantidad de Consejales: {distrito?.data?.concejalias}

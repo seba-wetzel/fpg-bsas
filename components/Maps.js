@@ -1,8 +1,9 @@
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback, useEffect, useContext } from 'react'
 import { useRouter } from 'next/router'
 import { GoogleMap, useJsApiLoader, Data, Marker } from '@react-google-maps/api'
 import { colores } from '../utils/seccionesElectorales.js'
 import {centros} from '../utils/centros'
+import {SearchContext} from "context/Search"
 const containerStyle = {
   width: '100%',
   height: '100%'
@@ -28,6 +29,7 @@ const Maps = () => {
   })
   const [marks, setMarks] = useState([])
   const router = useRouter()
+  const context = useContext(SearchContext);
   const onLoad = useCallback(
     (mapInstance) => {
       // do something with map Instance
@@ -66,6 +68,8 @@ const Maps = () => {
     }
     }
   }), [isLoaded];
+
+  useEffect(()=> console.log(context), [context])
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
@@ -82,7 +86,7 @@ const Maps = () => {
             //onLoad={onLoad}
             position={departamento.latLng}
             label={departamento.departamento}
-            visible={false}
+            visible={context.search ? departamento.departamento.includes(context.search.toUpperCase()) : false}
           />
       ))}
     </GoogleMap>
