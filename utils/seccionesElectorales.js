@@ -6,8 +6,7 @@ export const colores = {
   5: 'green',
   6: 'yellow',
   7: 'purple',
-  8: 'grey',
-  9: 'black'
+  8: 'black',
 }
 
 export const distritos = {

@@ -6,7 +6,8 @@ const Home = () => {
   const divRef = useRef()
   const [height, setHeight] = useState(0)
   useEffect(() => {
-    console.log('div ref', divRef.current.clientHeight)
+    //console.log('div ref', divRef.current.clientHeight)
+
   }, [divRef])
   return (
     <div className='h-full'>

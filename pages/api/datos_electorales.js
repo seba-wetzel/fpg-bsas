@@ -21,7 +21,7 @@ export const datos_electorales = {
         poblacion: 213619
       },
       {
-        distrito: 'gral las heras',
+        distrito: 'general las heras',
         intendencia: 'carlos osuna',
         fuerza_gobierno: 'fdt',
         concejalias: 6,
@@ -29,7 +29,7 @@ export const datos_electorales = {
         poblacion: 14889
       },
       {
-        distrito: 'gral rodriguez',
+        distrito: 'general rodriguez',
         intendencia: 'mauro garcia',
         fuerza_gobierno: 'fdt',
         concejalias: 10,
@@ -37,7 +37,7 @@ export const datos_electorales = {
         poblacion: 87339
       },
       {
-        distrito: 'gral san martin',
+        distrito: 'general san martin',
         intendencia: 'fernando moreira',
         fuerza_gobierno: 'fdt',
         concejalias: 12,
@@ -364,14 +364,6 @@ export const datos_electorales = {
         poblacion: 281120
       },
       {
-        distrito: 'exaltación de la cruz',
-        intendencia: 'diego nanni',
-        fuerza_gobierno: 'fdt',
-        concejalias: 6,
-        consejalias_escolares: 2,
-        poblacion: 9997
-      },
-      {
         distrito: 'pergamino',
         intendencia: 'javier martinez',
         fuerza_gobierno: 'jxc',
@@ -659,7 +651,7 @@ export const datos_electorales = {
           "poblacion": 8869
         },
         {
-          "distrito": "gral arenales",
+          "distrito": "general arenales",
           "intendencia": "edgardo battaglia",
           "fuerza_gobierno": "jxc",
           "concejalias": 6,
@@ -667,7 +659,7 @@ export const datos_electorales = {
           "poblacion": 14903
         },
         {
-          "distrito": "gral pinto",
+          "distrito": "general pinto",
           "intendencia": "jose alfredo zavatarelli",
           "fuerza_gobierno": "fdt",
           "concejalias": 6,
@@ -675,7 +667,7 @@ export const datos_electorales = {
           "poblacion": 6557
         },
         {
-          "distrito": "gral viamonte",
+          "distrito": "general viamonte",
           "intendencia": "franco flexas",
           "fuerza_gobierno": "jxc",
           "concejalias": 6,
@@ -683,7 +675,7 @@ export const datos_electorales = {
           "poblacion": 18074
         },
         {
-          "distrito": "gral villegas",
+          "distrito": "general villegas",
           "intendencia": "eduardo campana",
           "fuerza_gobierno": "jxc",
           "concejalias": 8,
@@ -803,7 +795,7 @@ export const datos_electorales = {
         "poblacion": 27042
       },
       {
-        "distrito": "gral belgrano",
+        "distrito": "general belgrano",
         "intendencia": "osvaldo dinapoli",
         "fuerza_gobierno": "jxc",
         "concejalias": 6,
@@ -811,7 +803,7 @@ export const datos_electorales = {
         "poblacion": 17365
       },
       {
-        "distrito": "gral guido",
+        "distrito": "general guido",
         "intendencia": "carlos rocha",
         "fuerza_gobierno": "fdt",
         "concejalias": 3,
@@ -819,7 +811,7 @@ export const datos_electorales = {
         "poblacion": 2816
       },
       {
-        "distrito": "gral lavalle",
+        "distrito": "general lavalle",
         "intendencia": "jose rodriguez ponte",
         "fuerza_gobierno": "jxc",
         "concejalias": 3,
@@ -827,7 +819,7 @@ export const datos_electorales = {
         "poblacion": 3700
       },
       {
-        "distrito": "gral madariaga",
+        "distrito": "general madariaga",
         "intendencia": "carlos santoro",
         "fuerza_gobierno": "jxc",
         "concejalias": 6,
@@ -835,7 +827,7 @@ export const datos_electorales = {
         "poblacion": 19747
       },
       {
-        "distrito": "gral paz",
+        "distrito": "general paz",
         "intendencia": "juan alvarez",
         "fuerza_gobierno": "fdt",
         "concejalias": 6,
@@ -843,7 +835,7 @@ export const datos_electorales = {
         "poblacion": 11202
       },
       {
-        "distrito": "gral pueyrredon",
+        "distrito": "general pueyrredon",
         "intendencia": "guillermo montenegro",
         "fuerza_gobierno": "jxc",
         "concejalias": 12,
@@ -1042,7 +1034,7 @@ export const datos_electorales = {
         "poblacion": 16889
       },
       {
-        "distrito": "gral lamadrid",
+        "distrito": "general lamadrid",
         "intendencia": "martin randazzo",
         "fuerza_gobierno": "jxc",
         "concejalias": 6,
@@ -1169,7 +1161,7 @@ export const datos_electorales = {
         "poblacion": 34190
       },
       {
-        "distrito": "gral alvear",
+        "distrito": "general alvear",
         "intendencia": "ramon capra - jxc",
         "fuerza_gobierno": "jxc",
         "concejalias": 6,
