@@ -1,4 +1,3 @@
-import * as React from 'react'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
@@ -29,7 +28,6 @@ function capitalize (word = ' ') {
 }
 
 export default function DistritoCard ({ distrito }) {
-  console.log(distrito)
   return (
     <Card variant='outlined' sx={{ minWidth: 275 }}>
       <CardContent>

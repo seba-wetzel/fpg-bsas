@@ -23,12 +23,18 @@ const MenuProps = {
   }
 }
 
-export const FieldsCreator = ({ fields = {}, handleChange: setSelected = () => null }) => {
+export const FieldsCreator = ({  onCreate}) => {
+  
+  const [fields, setField] = useState({});
+  
   const handleChange = (event) => {
     const {
       target: { value }
     } = event
-    setSelected(value)
+    setField(value)
+  }
+  const create = () => {
+    onCreate(fields)
   }
   const [optionName, setOptionName] = useState('')
 
@@ -36,13 +42,13 @@ export const FieldsCreator = ({ fields = {}, handleChange: setSelected = () => n
 
     <div className='flex flex-col gap-3 m-3'>
 
-      <div className='flex flex-row gap-3'>
+      <div className='flex flex-col md:flex-row gap-3'>
         <TextField
         className='flex-1'
         id='outlined-uncontrolled'
         label='Nombre del campo'
         value={fields?.name ?? ''}
-        onChange={({ target: { value } }) => setSelected({ ...fields, name: value })}
+        onChange={({ target: { value } }) => setField({ ...fields, name: value })}
       />
         <Select
           displayEmpty
@@ -103,24 +109,30 @@ export const FieldsCreator = ({ fields = {}, handleChange: setSelected = () => n
             onChange={({ target: { value } }) => setOptionName(value)}
             onKeyPress={(e) => {
               if (e.key === 'Enter') {
-                setSelected({ ...fields, options: [...fields.options, optionName] })
+                setField({ ...fields, options: [...fields.options, optionName] })
                 setOptionName('')
               }
             }}
           />}
         <Button 
-        // onClick={handleAddField} 
+        onClick={create} 
         variant="outlined" 
         startIcon={<AddCircleIcon />}>
         Agregar Campo
       </Button>
       </div>
       {fields?.type === 'select' &&
+        <div className='flex flex-col gap-3'>
+                <p className='
+                text-sm italic
+                '>Opciones para seleccionar</p>
         <Stack className='flex flex-row' direction='row' spacing={1}>
-          {fields.options.map((item, i) => (
-            <Chip key={i} label={item} onDelete={() => setSelected({ ...fields, options: fields.options.filter((_, j) => j !== i) })} />
-          ))}
-        </Stack>}
+
+          {fields.options.length ? fields.options.map((item, i) => (
+            <Chip key={i} label={item} onDelete={() => setField({ ...fields, options: fields.options.filter((_, j) => j !== i) })} />
+          )): <em>No hay opciones</em>}
+        </Stack>
+        </div>}
     </div>
   )
 }

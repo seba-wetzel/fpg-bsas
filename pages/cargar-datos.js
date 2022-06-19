@@ -10,8 +10,8 @@ import { Divider } from '@mui/material'
 const NewFieldElement = ({ field }) => {
   const [value, setValue] = useState(field.type === 'checkbox' ? field.value : '')
   switch (field.type) {
-    case 'text': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' type='text' value={value} onChange={(e) => setValue(e.target.value)} placeholder={field.placeholder} />
-    case 'number': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' type='number' value={value} onChange={(e) => setValue(e.target.value)} label={field.placeholder} placeholder={field.placeholder} />
+    case 'text': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent border-0 border-transparent ' type='text' value={value} onChange={(e) => setValue(e.target.value)} placeholder={field.name} />
+    case 'number': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' type='number' value={value} onChange={(e) => setValue(e.target.value)} label={field.name} placeholder={field.name} />
     case 'date': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' type='date' value={value} onChange={(e) => setValue(e.target.value)} />
     case 'time': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' type='time' value={value} onChange={(e) => setValue(e.target.value)} />
     case 'text-area': return <textarea name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' value={value} onChange={(e) => setValue(e.target.value)} placeholder={field.placeholder} />
@@ -19,7 +19,7 @@ const NewFieldElement = ({ field }) => {
     case 'checkbox': return <label className='w-full h-12 p-2 mr-8 bg-transparent'><input name={field.name} type='checkbox' value={value} onChange={(e) => setValue(e.target.value)} /> {field.label} </label>
     default: return null
   }
-}
+} 
 const createFieldElement = (field) => (
   <NewFieldElement field={field} key={crypto.randomUUID()} />
 
@@ -39,13 +39,15 @@ const CargarDatos = () => {
   // }
   // , [snapshot]);
 
-  const [field, setField] = useState({})
-  const [fields, setFields] = useState([])
+  const [fields, setFields] = useState([]);
+  const [formFields, setFormfields] = useState([])
   const formRef = useRef()
-  const handleAddField = () => {
+  
+  const handleAddField = (field) => {
     if (Object.keys(field).length > 0) {
       const newField = createFieldElement(field)
-      setFields([...fields, newField])
+      setFormfields([...formFields, newField])
+      setFields([...fields, field])
     }
   }
 
@@ -56,6 +58,10 @@ const CargarDatos = () => {
     const formElementsWithOptions = formElements.map(e => e.type === 'select-one' ? { ...e, options: [...e.options].map(o => o.value) } : e)
     console.log(formElementsWithOptions)
   }
+  useEffect(() => {
+    console.log(fields)
+  }
+  , [fields])
   return (
     <div>
       <h1 className='flex flex-col  '>
@@ -63,14 +69,12 @@ const CargarDatos = () => {
 
       </h1>
       <form ref={formRef} onSubmit={handlerSubmit} className='flex flex-col'>
-        {fields.map((field, i) => (
+        {formFields.map((field, i) => (
           <div key={i} className='flex flex-row border-2 rounded-lg  m-2 relative hover:border-gray-600'>
-
             {field}
-            <button className='absolute right-1 top-2 ' onClick={() => setFields(fields.filter((x, y) => i !== y))}>
+            <button className='absolute right-1 top-2 ' onClick={() => setFormfields(formFields.filter((x, y) => i !== y))}>
               <HighlightOffIcon className='hover:bg-red-600  hover:text-white rounded-full' />
             </button>
-
           </div>
         ))}
         <button type='submit'> Enviar</button>
@@ -78,11 +82,7 @@ const CargarDatos = () => {
       <Divider />
       <div className='flex flex-row justify-start content-center items-center '>
         <Divider />
-        <FieldsCreator fields={field} handleChange={setField} />
-
-        <Button onClick={handleAddField} variant="outlined" startIcon={<AddCircleIcon />}>
-        Agregar Campo
-      </Button>
+        <FieldsCreator  onCreate={handleAddField} />
       </div>
 
     </div>

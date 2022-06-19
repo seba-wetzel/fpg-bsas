@@ -8,9 +8,17 @@ const Seccion = () => {
   useEffect(() => {
     if (id) {
       (async function () {
-        const data = await fetch(`/api/${id}`)
-        const json = await data.json()
-        setDatos(json)
+        try {
+          const res = await fetch(`/api/${id}`)
+          const data = await res.json()
+          setDatos(data)
+        }
+        catch (err) {
+          console.log(err)
+        }
+        // const data = await fetch(`/api/${id}`)
+        // const json = await data.json()
+        // setDatos(json)
       })()
     }
   }, [id])
@@ -18,7 +26,7 @@ const Seccion = () => {
     <div className='h-full'>
       <div className='my-8'>.</div>
       <div className='h-full'>
-        <div className='flex flex-wrap justify-start m-8 gap-5'>
+        <div className='grid md:grid-cols-4 m-8 gap-5'>
           {datos && datos.distritos.map((d, i) => {
             console.log(d.distrito)
             const prop = { seccionElectoral: id, data: d }

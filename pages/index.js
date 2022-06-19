@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
-import Maps from '/components/Maps'
+import Maps from '../components/Maps'
 import SeccionesFooter from 'components/SeccionesFooter'
 
 const Home = () => {
