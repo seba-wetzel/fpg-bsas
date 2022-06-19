@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import AppBar from '@mui/material/AppBar'
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
@@ -10,7 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
 import { styled, alpha } from '@mui/material/styles'
 import Link from 'next/link'
-import { MenuList } from  'components/MenuList'
+import { MenuList } from 'components/MenuList'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -54,27 +54,19 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   }
 }))
 
-
-
-
-
-
-
 export default function Layout ({ children }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
   const toggleDrawer = (open) => (event) => {
     if (
       event &&
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')
     ) {
-      return;
+      return
     }
-  
-    setOpen( open );
-  };
 
-
+    setOpen(open)
+  }
 
   return (
     <div style={{ height: '100vh' }}>
@@ -97,10 +89,10 @@ export default function Layout ({ children }) {
               component='div'
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              <Link href={'/'}>
-              <a>Relevamiento</a>
+              <Link href='/'>
+                <a>Relevamiento</a>
               </Link>
-              
+
             </Typography>
             <Search>
               <SearchIconWrapper>
@@ -116,13 +108,13 @@ export default function Layout ({ children }) {
 
       </Box>
       <SwipeableDrawer
-            anchor={'left'}
-            open={open}
-            onClose={toggleDrawer(false)}
-            onOpen={toggleDrawer(true)}
-          >
-            <MenuList toggleDrawer={toggleDrawer}/>
-          </SwipeableDrawer >
+        anchor='left'
+        open={open}
+        onClose={toggleDrawer(false)}
+        onOpen={toggleDrawer(true)}
+      >
+        <MenuList toggleDrawer={toggleDrawer} />
+      </SwipeableDrawer>
       <main className='h-full mt-16'>{children}</main>
     </div>
   )

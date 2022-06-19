@@ -18,9 +18,9 @@ const Seccion = () => {
     <div className='h-full'>
       <div className='my-8'>.</div>
       <div className='h-full'>
-          <div className='flex flex-row  m-8 justify-center'> 
-          {datos && <DistritoCard distrito={datos} className='md:w-auto'/>}
-          </div>
+        <div className='flex flex-row  m-8 justify-center'>
+          {datos && <DistritoCard distrito={datos} className='md:w-auto' />}
+        </div>
       </div>
 
     </div>

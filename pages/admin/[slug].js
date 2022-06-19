@@ -1,8 +1,8 @@
-const CargarDatos = ()=>{
-    return(
-        <h1>
-            hola
-        </h1>
-    )
+const CargarDatos = () => {
+  return (
+    <h1>
+      hola
+    </h1>
+  )
 }
-export default CargarDatos;
+export default CargarDatos

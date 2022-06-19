@@ -18,15 +18,15 @@ const Seccion = () => {
     <div className='h-full'>
       <div className='my-8'>.</div>
       <div className='h-full'>
-      <div className='flex flex-wrap justify-start m-8 gap-5'> 
-        {datos && datos.distritos.map((d, i) =>{
-          console.log(d.distrito)
-          const prop = {seccionElectoral: id, data: d}
+        <div className='flex flex-wrap justify-start m-8 gap-5'>
+          {datos && datos.distritos.map((d, i) => {
+            console.log(d.distrito)
+            const prop = { seccionElectoral: id, data: d }
 
-return <DistritoCard key={i} distrito={prop} className='md:w-auto'/>
-        } 
-          
-        )}
+            return <DistritoCard key={i} distrito={prop} className='md:w-auto' />
+          }
+
+          )}
         </div>
       </div>
 

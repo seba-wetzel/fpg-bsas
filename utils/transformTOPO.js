@@ -3,7 +3,7 @@ import { distritos } from './seccionesElectorales.js'
 import * as fs from 'fs'
 console.log(distritos)
 const finder = distrito => {
-  const normalize = (input)=> input.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  const normalize = (input) => input.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
   const pairs = Object.entries(distritos)
   const toUpperCase = pairs.map(pair => [pair[0], pair[1].map(i => normalize(i))])
   const finded = toUpperCase.map(seccion => seccion[1].includes(normalize(distrito)) ? seccion[0] : null).filter(i => i).join('')
