@@ -10,12 +10,12 @@ import { Divider } from '@mui/material'
 const NewFieldElement = ({ field }) => {
   const [value, setValue] = useState(field.type === 'checkbox' ? field.value : '')
   switch (field.type) {
-    case 'text': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent border-0 border-transparent ' type='text' value={value} onChange={(e) => setValue(e.target.value)} placeholder={field.name} />
-    case 'number': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' type='number' value={value} onChange={(e) => setValue(e.target.value)} label={field.name} placeholder={field.name} />
-    case 'date': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' type='date' value={value} onChange={(e) => setValue(e.target.value)} />
-    case 'time': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' type='time' value={value} onChange={(e) => setValue(e.target.value)} />
-    case 'text-area': return <textarea name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' value={value} onChange={(e) => setValue(e.target.value)} placeholder={field.placeholder} />
-    case 'select': return <select name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent' value={value} onChange={(e) => setValue(e.target.value)}>{field.options.map(option => <option key={option} value={option}>{option}</option>)}</select>
+    case 'text': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent border-0 border-transparent focus:outline-none' type='text' value={value} onChange={(e) => setValue(e.target.value)} placeholder={field.name} />
+    case 'number': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent focus:outline-none' type='number' value={value} onChange={(e) => setValue(e.target.value)} label={field.name} placeholder={field.name} />
+    case 'date': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent focus:outline-none' type='date' value={value} onChange={(e) => setValue(e.target.value)} />
+    case 'time': return <input name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent focus:outline-none' type='time' value={value} onChange={(e) => setValue(e.target.value)} />
+    case 'text-area': return <textarea name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent focus:outline-none' value={value} onChange={(e) => setValue(e.target.value)} placeholder={field.placeholder} />
+    case 'select': return <select name={field.name} className='w-full h-12 p-2 mr-8 bg-transparent focus:outline-none' value={value} onChange={(e) => setValue(e.target.value)}>{field.options.map(option => <option key={option} value={option}>{option}</option>)}</select>
     case 'checkbox': return <label className='w-full h-12 p-2 mr-8 bg-transparent'><input name={field.name} type='checkbox' value={value} onChange={(e) => setValue(e.target.value)} /> {field.label} </label>
     default: return null
   }
